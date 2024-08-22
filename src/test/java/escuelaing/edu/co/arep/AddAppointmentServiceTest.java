@@ -1,9 +1,9 @@
+package escuelaing.edu.co.arep;
 
 
 import escuelaing.edu.co.arep.AddMedAppointmentService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class AddMedAppointmentServiceTest {
@@ -14,7 +14,7 @@ class AddMedAppointmentServiceTest {
     @BeforeEach
     void setUp() {
         appointmentService = new MedAppointmentService();
-        addMedAppointmentService = new AddMedAppointmentService(exerciseService);
+        addMedAppointmentService = new AddMedAppointmentService(appointmentService);
     }
 
     @Test

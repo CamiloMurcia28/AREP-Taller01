@@ -64,7 +64,7 @@ class ClientHandler implements Runnable {
                 out.println("HTTP/1.1 200 OK");
                 out.println("Content-type: " + "application/json");
                 out.println();
-                out.println(AREP.services.get("listAppointmentService").response(fileRequested));
+                out.println(AREP.services.get("listAppointmentService").response(fileRequested)); 
             }
             
             else if (method.equals("POST") && fileRequested.startsWith("/app/addMedAppointment")){

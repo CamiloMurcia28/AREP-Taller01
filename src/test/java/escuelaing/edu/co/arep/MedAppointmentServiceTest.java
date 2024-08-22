@@ -1,9 +1,11 @@
 package escuelaing.edu.co.arep;
 
+
 import escuelaing.edu.co.arep.MedAppointmentService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -38,7 +40,7 @@ class MedAppointmentServiceTest {
         assertEquals("General", appointments.get(0).getType());
 
         assertEquals("Valentino", appointments.get(1).getName());
-        assertEquals("Especialista", exercises.get(1).getType());
+        assertEquals("Especialista", appointments.get(1).getType());
     }
 
     @Test

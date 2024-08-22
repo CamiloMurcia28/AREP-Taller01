@@ -17,10 +17,13 @@ public class ListAppointmentService implements RESTService{
     @Override
     public String response(String request) {
         ArrayList<MedAppointment> appointments = medAppointmentService.getAppointments();
-        return "{\"appointments\":[" + 
-            appointments.stream()
-            .map((MedAppointment medAppointment) -> String.format("{\"docname\":\"%s\", \"date\":%d\", \"type\":%s}", medAppointment.getName(), medAppointment.getDate(), medAppointment.getType()))
-            .collect(Collectors.joining(",")) + 
+        return "{\"appointments\":[" +
+        appointments.stream()
+                .map(medAppointment -> String.format("{\"docname\":\"%s\", \"date\":%d, \"type\":\"%s\"}",
+                                                    medAppointment.getName(),
+                                                    medAppointment.getDate(),
+                                                    medAppointment.getType()))
+                .collect(Collectors.joining(",")) +
         "]}";
     }
     

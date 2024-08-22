@@ -54,7 +54,7 @@ public class AddMedAppointmentService implements RESTService{
         }
 
         appointmentService.addMedAppointment(docName, schDate, appointmentType);
-        return "{\"DoctorName\":\"" + docName + "\", \"date\":" + schDate + "\",\"type\":" + appointmentType + "}" ;
+        return "{\"DoctorName\":\"" + docName + "\", \"date\":\"" + schDate + "\",\"type\":\"" + appointmentType + "\"}";
         }
     
 }
