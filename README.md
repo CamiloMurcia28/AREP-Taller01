@@ -1,5 +1,5 @@
 ### Escuela Colombiana de Ingeniería
-### Arquitecturas de Software - ARSW
+### Arquitectura Empresarial - AREP
 #  TALLER DISEÑO Y ESTRUCTURACIÓN DE APLICACIONES DISTRIBUIDAS EN INTERNET
 
 Nombre: Camilo Murcia Espinosa
