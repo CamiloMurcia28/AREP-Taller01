@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita Médica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Programar Cita Médica</h1>
+    <form>
+        <label for="doctor">Nombre del Doctor:</label><br>
+        <input type="text" id="doctor" name="doctor" required><br><br>
+        
+        <label for="fecha">Fecha de la Cita:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        
+        <label for="tipo">Tipo de Cita:</label><br>
+        <select id="tipo" name="tipo" required>
+            <option value="">Seleccione un tipo</option>
+            <option value="general">Consulta General</option>
+            <option value="especialista">Especialista</option>
+            <option value="seguimiento">Seguimiento</option>
+            <option value="urgencia">Urgencia</option>
+        </select><br><br>
+        
+        <input type="submit" value="Programar Cita">
+    </form>
+    <script src="appointments.js"></script>
+</body>
+</html>
