@@ -1,4 +1,4 @@
-package escuelaing.edu.co.arep;
+
 
 import escuelaing.edu.co.arep.AddMedAppointmentService;
 import org.junit.jupiter.api.BeforeEach;
